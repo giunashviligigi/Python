@@ -1,0 +1,7 @@
+a=input("say something")
+b=input("say something")
+c=a+b
+print (c)
+for i in c:
+    if i!="e" and i!="o":
+        print (i)

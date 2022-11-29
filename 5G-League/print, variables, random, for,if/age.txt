@@ -1,0 +1,2 @@
+a=int(input("when are you born sir?"))
+print ("hello, your age is:",2022-a)

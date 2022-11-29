@@ -1,0 +1,8 @@
+a="hello"
+b=""
+for i in a:
+    if i!="e":
+        b=b+i
+    else:
+        b=b+"*"
+print (b)

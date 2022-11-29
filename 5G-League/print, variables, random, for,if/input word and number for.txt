@@ -1,0 +1,4 @@
+a= input("write something:")
+b= int(input("write a number:"))
+for i in range(0,b):
+    print(a)

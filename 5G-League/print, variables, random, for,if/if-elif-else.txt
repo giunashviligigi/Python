@@ -1,0 +1,7 @@
+a=int(input("the number please:"))
+if a>15:
+    print ("it is more than 15")
+elif a==15:
+    print ("it's equal")
+else:
+    print ("it is less than 15")

@@ -1,0 +1,4 @@
+import random as r
+a=r.randrange(0,10)
+b=r.randrange(0,10)
+print ("a+b=",a+b)

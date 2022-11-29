@@ -1,0 +1,11 @@
+a="useri"
+b="paroli"
+c=input("User: ")
+d=input("Password: ")
+
+if a==c and b==d:
+    print ("Welcome")
+elif a==c or b==d:
+    print ("try again")
+else:
+    print ("you are hacker")

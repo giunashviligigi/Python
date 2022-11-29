@@ -1,0 +1,6 @@
+a = "Luka"
+b =input("whats your name? ")
+if a == b:
+    print("i know you!")
+else: 
+    print("i dont know you")

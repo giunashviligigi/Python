@@ -1,0 +1,6 @@
+a=20
+b=15
+if a>18 or b>18:
+    print ("both are big")
+else:
+    print ("they are small")
