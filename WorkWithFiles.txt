@@ -1,0 +1,46 @@
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"r")
+text=f.readlines()
+f.close()
+text.pop(0)
+max_price=0
+max_stock=0
+for i in text:
+    i = i.split(" ")
+    if float(i[3]) > max_price:
+        max_price= float(i[3])
+        max_stock = i[0]
+print(max_price,max_stock)
+________________________________________________________________
+
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"w")
+for i in range(3):
+    name = input("sheiyvane sheni saxeli: ")
+    f.write(name)
+    f.write("\n")
+f.close()
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"r")
+text = f.read()
+f.close()
+print(text)\
+________________________________________________________________
+
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"w")
+for i in range(3):
+    name = input("sheiyvane 3 saxeli: ")
+    f.write(name + "\n")
+f.close()
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"r")
+text = f.read()
+f.close()
+print(text)
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"a")
+name=input("daamate saxeli:")
+f.write(name + "\n")
+f.close()
+f=open('C:\\Users\\Student\\Desktop\\stocks.txt',"r")
+text = f.read()
+f.close()
+print(text)
+________________________________________________________________
+
+
