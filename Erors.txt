@@ -1,0 +1,61 @@
+
+def implementDivision(a, b):
+    try:
+        value=a/b
+        return value
+    except ZeroDivisionError:
+            return "Number Cannot Be Devided By Zero"
+    except:
+            return "EROR 404"
+print(implementDivision(10, 0))
+print(implementDivision(10, '5'))
+
+_____________________________________________________________________
+
+lst = [2,4,10,42,12,0,]
+lst_three = []
+
+for num in lst:
+    try:
+        if 20 % num == 0:
+            lst_three.append(num)
+    except:
+        print(ZeroDivisionError)
+print(lst_three)
+
+_____________________________________________________________________
+
+d = [{"Puppies": 17}, {"Puppies": 23}, {"Fish": 203}, {"Birds": 20}]
+
+try:
+    for dict in d:
+        print(dict['Puppies'])
+except:
+    print("Key Error")
+_____________________________________________________________________
+
+d = [{"Puppies": 17}, {"Puppies": 23}, {"Fish": 203}, {"Birds": 20}]
+total = 0
+for dict in d:
+    try:
+        total = total + dict["Puppies"]
+    except KeyError:
+        pass
+print(total)
+
+_____________________________________________________________________
+
+d = [{"Puppies": '17'}, {"Puppies": 23}, {"Fish": 203}, {"Birds": 20}]
+total = 0
+for dict in d:
+    try:
+        total = total + dict["Puppies"]
+    except KeyError:
+        pass
+    except TypeError:
+        total = total + int(dict["Puppies"])
+
+print(total)
+
+_____________________________________________________________________
+
